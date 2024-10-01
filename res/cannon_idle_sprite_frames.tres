@@ -1,0 +1,58 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://cyp4etctmsx7l"]
+
+[ext_resource type="Texture2D" uid="uid://b4yqxw7q11tdh" path="res://res/CannonIdle.png" id="1_juj62"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxmaa"]
+atlas = ExtResource("1_juj62")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0lpo"]
+atlas = ExtResource("1_juj62")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7fh3"]
+atlas = ExtResource("1_juj62")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2c186"]
+atlas = ExtResource("1_juj62")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujkn3"]
+atlas = ExtResource("1_juj62")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmo2q"]
+atlas = ExtResource("1_juj62")
+region = Rect2(16, 32, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxmaa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0lpo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7fh3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2c186")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujkn3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmo2q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
