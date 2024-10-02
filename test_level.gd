@@ -11,11 +11,11 @@ func _process(delta: float) -> void:
 	
 	pass
 
-func _input(event):
+func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_LEFT :
 			print("Left mouse button")
 			var machinegunnerInst = MachineGunner.instantiate()
-			var position = get_viewport().get_mouse_position()
-			
-			
+			var spawnPosition = get_global_mouse_position()
+			machinegunnerInst.global_position = position
+			add_child(machinegunnerInst)

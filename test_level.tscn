@@ -1,13 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjqbi8f5mkmne"]
+[gd_scene load_steps=2 format=3 uid="uid://bjqbi8f5mkmne"]
 
-[ext_resource type="Script" path="res://test_level.gd" id="1_2u6h0"]
-[ext_resource type="PackedScene" uid="uid://dgc4ac8omervm" path="res://res/machine-gunner/machinegunner.tscn" id="1_d26fo"]
+[ext_resource type="Script" path="res://unit_factory.gd" id="1_24b5c"]
 
 [node name="Scene" type="Node2D"]
 position = Vector2(552, 476)
 scale = Vector2(2, 2)
-script = ExtResource("1_2u6h0")
-MachineGunner = ExtResource("1_d26fo")
 
-[node name="machinegunner" parent="." instance=ExtResource("1_d26fo")]
-position = Vector2(89, 34)
+[node name="UnitFactory" type="Node2D" parent="."]
+script = ExtResource("1_24b5c")

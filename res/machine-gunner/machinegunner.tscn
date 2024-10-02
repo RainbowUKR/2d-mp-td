@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgc4ac8omervm"]
+[gd_scene load_steps=3 format=3 uid="uid://dgc4ac8omervm"]
 
-[ext_resource type="Script" path="res://res/machine-gunner/rigid_body_2d.gd" id="1_knf6f"]
 [ext_resource type="Texture2D" uid="uid://bpr4ddr3w8y51" path="res://res/machine-gunner/machine-gunner.png" id="1_wokmx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwjfr"]
@@ -8,9 +7,10 @@ radius = 8.0
 height = 18.0
 
 [node name="machinegunner" type="Node2D"]
+top_level = true
+scale = Vector2(2, 2)
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
-script = ExtResource("1_knf6f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 shape = SubResource("CapsuleShape2D_kwjfr")
