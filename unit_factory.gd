@@ -11,5 +11,6 @@ func _input(event: InputEvent) -> void:
 func spawnMG(spawn_global_position: Vector2) -> void:
 	var instance: Node2D = machineGunUnit.instantiate()
 	instance.global_position = spawn_global_position
+	printt(instance.global_position)
 	add_child(instance)
 	

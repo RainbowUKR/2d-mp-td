@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://unit_factory.gd" id="1_24b5c"]
 
 [node name="Scene" type="Node2D"]
-position = Vector2(552, 476)
 scale = Vector2(2, 2)
 
 [node name="UnitFactory" type="Node2D" parent="."]

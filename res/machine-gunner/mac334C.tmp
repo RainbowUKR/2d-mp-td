@@ -1,15 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://dgc4ac8omervm"]
+[gd_scene load_steps=4 format=3 uid="uid://dgc4ac8omervm"]
 
 [ext_resource type="Script" path="res://res/machine-gunner/machinegunner.gd" id="1_t87t0"]
 [ext_resource type="Texture2D" uid="uid://bpr4ddr3w8y51" path="res://res/machine-gunner/machine-gunner.png" id="1_wokmx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kwjfr"]
+radius = 8.0
+height = 18.0
 
 [node name="machinegunner" type="Node2D"]
 top_level = true
 scale = Vector2(2, 2)
 script = ExtResource("1_t87t0")
 
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CapsuleShape2D_kwjfr")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-0.25, 2.5)
-scale = Vector2(1.38, 1.5)
+scale = Vector2(2, 2)
 texture = ExtResource("1_wokmx")
 vframes = 2
